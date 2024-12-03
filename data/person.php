@@ -7,12 +7,14 @@ objek   -> pisang
         -> mangga
 */
 
+// inheritance -> pewarisan
+
 class Person
 {
     var string $name;
     var int $age;
     var string $address;
-    var string $country = "Indonesia"; // Default Value
+    var string $country; // Default Value
 
     const JUMLAH_KAKI = 2;
 
@@ -20,7 +22,7 @@ class Person
         string $name,
         string $address,   
         int $age,
-        string $country = "Indonesia", // Default Value
+        string $country, // Default Value
     )
     {
         $this->name = $name; 
